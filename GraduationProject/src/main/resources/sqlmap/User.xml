@@ -5,6 +5,6 @@
 
 <mapper namespace="dao.UserDAO">
     <select id="selectUserByName" parameterType="java.util.Map" resultType="User">
-        select * from `userlogin` where userName = #{userName}
+        select * from `User` where user_name = #{userName}
     </select>
 </mapper>
