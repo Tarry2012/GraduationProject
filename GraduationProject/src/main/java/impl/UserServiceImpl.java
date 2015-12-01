@@ -31,10 +31,8 @@ public class UserServiceImpl implements UserService{
             userLoginInfo.put("userName", name);
             userLoginInfo.put("userPassword", password);
             User user = userDAO.selectUserByName(userLoginInfo);
-            System.out.println(user.toString());
-            if (user.getUserPassword().equals(password)){
-                logger.debug("this is test debug log 2");
-                logger.error(System.getProperties());
+            if (user != null && user.getUserPassword().equals(password)){
+                System.out.println(user.toString());
                 return true;
             }else{
                 return false;
