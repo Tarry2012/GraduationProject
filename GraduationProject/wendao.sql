@@ -1,8 +1,8 @@
--- MySQL dump 10.14  Distrib 5.5.43-MariaDB, for Linux (i686)
+-- MySQL dump 10.14  Distrib 5.5.39-MariaDB, for Linux (x86_64)
 --
 -- Host: localhost    Database: wendao
 -- ------------------------------------------------------
--- Server version	5.5.43-MariaDB
+-- Server version	5.5.39-MariaDB
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -92,8 +92,9 @@ CREATE TABLE `User` (
   UNIQUE KEY `user_name` (`user_name`),
   UNIQUE KEY `user_mail` (`user_mail`),
   UNIQUE KEY `user_mail_2` (`user_mail`),
+  UNIQUE KEY `user_mail_3` (`user_mail`),
   UNIQUE KEY `user_home_page` (`user_home_page`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -102,7 +103,6 @@ CREATE TABLE `User` (
 
 LOCK TABLES `User` WRITE;
 /*!40000 ALTER TABLE `User` DISABLE KEYS */;
-INSERT INTO `User` VALUES (1,'test','test',NULL,'',NULL,NULL,NULL),(3,'test1','test2',NULL,'353216124@qq.com',NULL,NULL,NULL);
 /*!40000 ALTER TABLE `User` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -117,6 +117,7 @@ CREATE TABLE `User_Video` (
   `user_id` int(11) NOT NULL DEFAULT '0',
   `video_id` int(11) NOT NULL DEFAULT '0',
   `type_id` int(11) NOT NULL,
+  `is_delete` int(11) NOT NULL,
   PRIMARY KEY (`user_id`,`video_id`),
   KEY `video_id` (`video_id`),
   KEY `type_id` (`type_id`),
@@ -198,4 +199,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-12-01 21:04:43
+-- Dump completed on 2015-12-06 16:13:22
