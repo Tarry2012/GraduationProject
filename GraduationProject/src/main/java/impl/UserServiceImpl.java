@@ -27,12 +27,9 @@ public class UserServiceImpl implements UserService{
         }
         try{
             UserDAO userDAO = session.getMapper(UserDAO.class);
-            Map<String, String> userLoginInfo = new HashMap<String, String>();
-            userLoginInfo.put("userName", name);
-            userLoginInfo.put("userPassword", password);
-            User user = userDAO.selectUserByName(userLoginInfo);
+            User user = userDAO.selectUserByName(name);
+            System.out.println(user.toString());
             if (user != null && user.getUserPassword().equals(password)){
-                System.out.println(user.toString());
                 return true;
             }else{
                 return false;
