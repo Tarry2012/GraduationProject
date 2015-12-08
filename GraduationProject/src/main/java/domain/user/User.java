@@ -6,6 +6,11 @@ public class User {
     private int userId;
     private String userName;
     private String userPassword;
+    private String userSex;
+    private String userMail;
+    private String userPicture;
+    private String userHomePage;
+    private String userInterestType;
 
     public int getUserId() {
         return userId;
@@ -31,7 +36,57 @@ public class User {
         this.userPassword = userPassword;
     }
 
-    public String toString(){
-        return "user[userId= " + userId + ", userName= " + userName + ", userPassword= " + userPassword + "]";
+    public String getUserSex() {
+        return userSex;
+    }
+
+    public void setUserSex(String userSex) {
+        this.userSex = userSex;
+    }
+
+    public String getUserMail() {
+        return userMail;
+    }
+
+    public void setUserMail(String userMail) {
+        this.userMail = userMail;
+    }
+
+    public String getUserPicture() {
+        return userPicture;
+    }
+
+    public void setUserPicture(String userPicture) {
+        this.userPicture = userPicture;
+    }
+
+    public String getUserHomePage() {
+        return userHomePage;
+    }
+
+    public void setUserHomePage(String userHomePage) {
+        this.userHomePage = userHomePage;
+    }
+
+    public String getUserInterestType() {
+        return userInterestType;
+    }
+
+    public void setUserInterestType(String userInterestType) {
+        this.userInterestType = userInterestType;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId=" + userId +
+                ", userName='" + userName + '\'' +
+                ", userPassword='" + userPassword + '\'' +
+                ", userSex='" + userSex + '\'' +
+                ", userMail='" + userMail + '\'' +
+                ", userPicture='" + userPicture + '\'' +
+                ", userHomePage='" + userHomePage + '\'' +
+                ", userInterestType='" + userInterestType + '\'' +
+                '}';
     }
 }
