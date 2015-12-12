@@ -152,24 +152,11 @@ button[name="searchButton"] {
 }
 
 .rank{
-    margin-left: 10px;
+    margin-left: 5px;
     margin-top: -10px;
     width: 24%;
     float:left;
     color: #09924B;
-}
-
-.list ul>li{
-    list-style:none;
-    margin-bottom: 6.3px;
-    margin-left: 6px;
-    text-align: center;
-}
-
-.list ul>li>a:focus ul>li>a:hover{
-   color: #2e9057;
-
-
 }
 
 .guess_content {

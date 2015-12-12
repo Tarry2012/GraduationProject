@@ -24,7 +24,7 @@
 <div class="top_content">
     <ul>
         <li><a href="#">我的主页</a></li>
-        <li><a href="#">登录</a></li>
+        <li><a href="userLogin.jsp">登录</a></li>
         <li><a href="#">注册</a></li>
     </ul>
     <div class="top_title">
@@ -105,20 +105,15 @@
     <%--图片结束--%>
 
     <div class="rank">
-        <img src="resources/images/hotvideo.png"/>
-        <span class="list">
-        <ul>
-            <li><a href="#">视频1</a></li>
-            <li><a href="#">视频2</a></li>
-            <li><a href="#">视频3</a></li>
-            <li><a href="#">视频4</a></li>
-            <li><a href="#">视频5</a></li>
-            <li><a href="#">视频6</a></li>
-            <li><a href="#">视频7</a></li>
-            <li><a href="#">视频8</a></li>
-            <li><a href="#">视频9</a></li>
-            <li><a href="#">视频10</a></li>
-        </ul>
+        <img src="resources/images/hotvideo.png" height="60px"/>
+        <span class="list-group">
+            <a href="#" class="list-group-item list-group-item-success">视频1</a>
+            <a href="#" class="list-group-item list-group-item-info">视频2</a>
+            <a href="#" class="list-group-item list-group-item-success">视频3</a>
+            <a href="#" class="list-group-item list-group-item-info">视频3</a>
+            <a href="#" class="list-group-item list-group-item-success">视频4</a>
+            <a href="#" class="list-group-item list-group-item-info">视频5</a>
+            <a href="#" class="list-group-item list-group-item-success">视频6</a>
         </span>
     </div>
 </div>
