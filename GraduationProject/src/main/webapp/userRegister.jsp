@@ -29,22 +29,22 @@
         <div class="panel-body">
             <form action="" method="post">
                 <div class="input-group input-group-lg">
-                    <span class="input-group-addon" id="sizing-addon1">用户名&nbsp&nbsp:&nbsp</span>
+                    <span class="input-group-addon" id="sizing-addon1">用户名&nbsp&nbsp:&nbsp&nbsp</span>
                     <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1"
                            name="userName">
                 </div>
                 <div class="input-group input-group-lg">
-                    <span class="input-group-addon" id="sizing-addon1">密&nbsp&nbsp&nbsp&nbsp&nbsp码&nbsp&nbsp:</span>
+                    <span class="input-group-addon" id="sizing-addon1">密&nbsp&nbsp&nbsp&nbsp&nbsp码&nbsp&nbsp:&nbsp</span>
                     <input type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon1"
                            name="password1">
                 </div>
                 <div class="input-group input-group-lg">
-                    <span class="input-group-addon" id="sizing-addon1">确认密码:</span>
+                    <span class="input-group-addon" id="sizing-addon1">确认密码&nbsp:</span>
                     <input type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon1"
                            name="password2">
                 </div>
                 <div class="input-group input-group-lg">
-                    <span class="input-group-addon" id="sizing-addon1">邮&nbsp&nbsp&nbsp&nbsp&nbsp箱&nbsp&nbsp:</span>
+                    <span class="input-group-addon" id="sizing-addon1">邮&nbsp&nbsp&nbsp&nbsp&nbsp箱&nbsp&nbsp:&nbsp</span>
                     <input type="text" class="form-control" placeholder="Mail" aria-describedby="sizing-addon1"
                            name="usermail">
                 </div>
