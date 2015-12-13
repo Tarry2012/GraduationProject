@@ -19,13 +19,22 @@
     <link href="<%=request.getContextPath()%>/resources/css/index.css" rel="stylesheet" type="text/css"/>
 
     <title>问道学习视频网站</title>
+    <script>
+        function aboutUs(){
+            alert("软件1204 汤秋媛 \n软件1203 宋润雨")
+        }
+        function contactUs(){
+            alert("宋润雨邮箱：songrunyu1993@gmail.com \n" +
+                    "汤秋媛邮箱：njtangqy@163.com")
+        }
+    </script>
 </head>
 <body>
 <div class="top_content">
     <ul>
         <li><a href="#">我的主页</a></li>
         <li><a href="userLogin.jsp">登录</a></li>
-        <li><a href="#">注册</a></li>
+        <li><a href="userRegister.jsp">注册</a></li>
     </ul>
     <div class="top_title">
         欢迎来到 问道视频学习网站
@@ -124,7 +133,7 @@
     </div>
     <div class="guess_content clearfix">
         <div class="add_convenient">
-            <video id="my-video" class="video-js" controls preload="auto" width="370" height="208"
+            <video id="my-video" class="video-js" controls preload="auto" width="350" height="208"
                    poster="resources/images/2a.jpg" data-setup="{}">
                 <source src="http://www.w3school.com.cn/i/movie.ogg" type="video/ogg"/>
                 <source src="MY_VIDEO.webm" type="video/webm"/>
@@ -135,7 +144,7 @@
             </video>
         </div>
         <div class="add_convenient">
-            <video id="my-video" class="video-js" controls preload="auto" width="370" height="208"
+            <video id="my-video" class="video-js" controls preload="auto" width="350" height="208"
                    poster="resources/images/2a.jpg" data-setup="{}">
                 <source src="resources/video/李易峰-请跟我联络.mp4" type='video/ogg'>
                 <source src="MY_VIDEO.webm" type='video/webm'>
@@ -146,7 +155,7 @@
             </video>
         </div>
         <div class="add_convenient">
-            <video id="my-video" class="video-js" controls preload="auto" width="370" height="208"
+            <video id="my-video" class="video-js" controls preload="auto" width="350" height="208"
                    poster="resources/images/2a.jpg" data-setup="{}">
                 <source src="resources/video/李易峰-请跟我联络.mp4" type='video/ogg'>
                 <source src="MY_VIDEO.webm" type='video/webm'>
@@ -160,7 +169,9 @@
 </div>
 
 <div class="bottom_base">
-    <h5>版权归问道视频学习网站所有</h5>
+    <h4>版权归问道视频学习网站所有</h4>
+    <input type="button" onclick="aboutUs()" value="关于我们">
+    <input type="button" onclick="contactUs()" value="联系我们">
 </div>
 <script src="http://vjs.zencdn.net/5.3.0/video.js"></script>
 </body>

@@ -5,6 +5,7 @@
     width: 200px;
     height: 500px;
 }
+
 .page-container {
     text-align: center;
 }
@@ -15,7 +16,7 @@
 
 .btn-group>.btn:first-child{
     margin-right: 250px;
-   /* margin-top: 20px;*/
+    /* margin-top: 20px;*/
     margin-left: 5px;
 }
 

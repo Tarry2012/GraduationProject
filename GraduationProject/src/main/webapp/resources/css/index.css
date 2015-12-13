@@ -178,15 +178,21 @@ button[name="searchButton"] {
     }
 
     .add_convenient {
-        width: 370px;
-        height: 208px;
-        margin-left: 15px;
-        margin-right: 15px;
+        width: 350px;
+        height: 196px;
+        margin-left: 25px;
+        margin-right: 25px;
         float: left;
     }
 }
 
 .bottom_base{
-    margin-top: 15px;
+    margin-top: 25px;
     text-align: center;
+}
+
+.bottom_base input{
+    border:none;
+    background-color: transparent;
+    margin-right: 10px;
 }
