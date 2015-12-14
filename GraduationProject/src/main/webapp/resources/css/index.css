@@ -1,30 +1,51 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-size:16px;
     font-family: "Arial","Hiragino Sans GB","Microsoft YaHei",\5fae\8f6f\96c5\9ed1,"Helvetica","sans-serif";
-    overflow: hidden;
 }
-
+.clearfixul:after {
+    width: 0;
+    height: 0;
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
 body{
     background-color:#F5F5F5;
 }
 
 .top_content{
-    width: 100%;
     height: 27px;
     margin: 0 auto;
     background-color:#EBEBEB;
     padding-right: 80px;
+    position: relative;
 }
-.top_title{
+.top_title {
     width:90%;
-    margin:10px 500px;
+    line-height: 27px;
+    text-align: center;
     color: dimgrey;
 }
-
-.top_content li{
-    float:right;
+.top_content ul {
+    padding-right: 30px;
+    list-style-type: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.top_content ul:after {
+    width: 0;
+    height: 0;
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.top_content ul>li{
+    float: right;
     width: 70px;
     line-height: 27px;
 }
@@ -40,14 +61,14 @@ body{
 }
 
 .logo{
-    height: 80px;
+    height: 85px;
 }
 
 .logo_left{
     width: 25%;
-    height: 80px;
+    height: 70px;
     float: left;
-    text-align: right;
+    padding-left:200px;
 }
 .logo_left img{
     width: auto;
@@ -115,7 +136,63 @@ button[name="searchButton"] {
     color:#FFF;
 }
 
-.advertisement{
+.slide{
+    width: 75%;
+    float:left;
+}
+
+.carousel-inner h3{
+    color: #FFFFFF;
+    font-weight:900;
+}
+
+.carousel-inner>.item>img {
     width: 100%;
-    height: 500px;
+    height: 350px;
+}
+
+.rank{
+    margin-left: 5px;
+    margin-top: -10px;
+    width: 24%;
+    float:left;
+    color: #09924B;
+}
+
+.guess_content {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.add_convenient {
+    width: 310px;
+    height: 174px;
+    margin-left: 5px;
+    margin-right: 5px;
+    float: left;
+}
+@media only screen and (min-width: 1200px) {
+    .guess_content {
+        width: 1200px;
+    }
+
+    .add_convenient {
+        width: 350px;
+        height: 196px;
+        margin-left: 25px;
+        margin-right: 25px;
+        float: left;
+    }
+}
+
+.bottom_base{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.bottom_base input{
+    border:none;
+    background-color: transparent;
+    margin-right: 10px;
 }
