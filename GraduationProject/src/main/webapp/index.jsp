@@ -33,8 +33,8 @@
 <div class="top_content">
     <ul>
         <li><a href="#">我的主页</a></li>
-        <li><a href="userLogin.jsp">登录</a></li>
-        <li><a href="userRegister.jsp">注册</a></li>
+        <li><a href="<%=request.getContextPath()%>/userLogin.jsp">登录</a></li>
+        <li><a href="<%=request.getContextPath()%>/userRegister.jsp">注册</a></li>
     </ul>
     <div class="top_title">
         欢迎来到 问道视频学习网站
@@ -44,9 +44,9 @@
 
 <div class="logo">
     <div class="logo_left">
-        <img src="resources/images/wendaologo.png" alt="logoImage">
+        <img src="<%=request.getContextPath()%>/resources/images/wendaologo.png" alt="logoImage">
     </div>
-    <div class="logo_middle"><img src="resources/images/sunny.png" height="80px"/></div>
+    <div class="logo_middle"><img src="<%=request.getContextPath()%>/resources/images/sunny.png" height="80px"/></div>
     <div class="logo_right">
         <form action="" method="get">
             <div class="search_text">
@@ -80,21 +80,21 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="resources/images/1a.jpg"/>
+                <img src="<%=request.getContextPath()%>/resources/images/1a.jpg"/>
 
                 <div class="carousel-caption">
                     <h3>这是图片标题1</h3>
                 </div>
             </div>
             <div class="item">
-                <img src="resources/images/2a.jpg"/>
+                <img src="<%=request.getContextPath()%>/resources/images/2a.jpg"/>
 
                 <div class="carousel-caption">
                     <h3>这是图片标题2</h3>
                 </div>
             </div>
             <div class="item">
-                <img src="resources/images/3a.jpg"/>
+                <img src="<%=request.getContextPath()%>/resources/images/3a.jpg"/>
 
                 <div class="carousel-caption">
                     <h3>这是图片标题3</h3>
@@ -114,7 +114,7 @@
     <%--图片结束--%>
 
     <div class="rank">
-        <img src="resources/images/hotvideo.png" height="60px"/>
+        <img src="<%=request.getContextPath()%>/resources/images/hotvideo.png" height="60px"/>
         <span class="list-group">
             <a href="#" class="list-group-item list-group-item-success">视频1</a>
             <a href="#" class="list-group-item list-group-item-info">视频2</a>
@@ -129,12 +129,12 @@
 
 <div class="guessYouLike">
     <div class="guess_title">
-        <img src="resources/images/guessyoulike.png" height="45px"/>
+        <img src="<%=request.getContextPath()%>/resources/images/guessyoulike.png" height="45px"/>
     </div>
     <div class="guess_content clearfix">
         <div class="add_convenient">
             <video id="my-video" class="video-js" controls preload="auto" width="350" height="208"
-                   poster="resources/images/2a.jpg" data-setup="{}">
+                   poster="<%=request.getContextPath()%>/resources/images/2a.jpg" data-setup="{}">
                 <source src="http://www.w3school.com.cn/i/movie.ogg" type="video/ogg"/>
                 <source src="MY_VIDEO.webm" type="video/webm"/>
                 <p class="vjs-no-js">
@@ -145,8 +145,8 @@
         </div>
         <div class="add_convenient">
             <video id="my-video" class="video-js" controls preload="auto" width="350" height="208"
-                   poster="resources/images/2a.jpg" data-setup="{}">
-                <source src="resources/video/李易峰-请跟我联络.mp4" type='video/ogg'>
+                   poster="<%=request.getContextPath()%>/resources/images/2a.jpg" data-setup="{}">
+                <source src="<%=request.getContextPath()%>/resources/video/李易峰-请跟我联络.mp4" type='video/ogg'>
                 <source src="MY_VIDEO.webm" type='video/webm'>
                 <p class="vjs-no-js">
                     To view this video please enable JavaScript, and consider upgrading to a web browser that
@@ -156,8 +156,8 @@
         </div>
         <div class="add_convenient">
             <video id="my-video" class="video-js" controls preload="auto" width="350" height="208"
-                   poster="resources/images/2a.jpg" data-setup="{}">
-                <source src="resources/video/李易峰-请跟我联络.mp4" type='video/ogg'>
+                   poster="<%=request.getContextPath()%>/resources/images/2a.jpg" data-setup="{}">
+                <source src="<%=request.getContextPath()%>/resources/video/李易峰-请跟我联络.mp4" type='video/ogg'>
                 <source src="MY_VIDEO.webm" type='video/webm'>
                 <p class="vjs-no-js">
                     To view this video please enable JavaScript, and consider upgrading to a web browser that

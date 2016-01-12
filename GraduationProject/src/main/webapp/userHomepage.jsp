@@ -16,6 +16,9 @@
     <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!--datatable-->
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.10/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.10/js/jquery.dataTables.js"></script>
     <link href="<%=request.getContextPath()%>/resources/css/index.css" rel="stylesheet" type="text/css"/>
     <link href="<%=request.getContextPath()%>/resources/css/userHomepage.css" rel="stylesheet" type="text/css"/>
     <title>问道 用户主页</title>
@@ -23,8 +26,8 @@
 <body>
 <div class="top_content">
     <ul>
-        <li>&nbsp;</li>
-        <li><a href="userHomepage.jsp">我的主页</a></li>
+        <li><a href="#">修改信息</a></li>
+        <li><a href="<%=request.getContextPath()%>/userLogin.jsp">我的主页</a></li>
     </ul>
     </ul>
 
@@ -36,9 +39,9 @@
 
 <div class="logo">
     <div class="logo_left">
-        <img src="resources/images/wendaologo.png" alt="logoImage">
+        <img src="<%=request.getContextPath()%>/resources/images/wendaologo.png" alt="logoImage">
     </div>
-    <div class="logo_middle"><img src="resources/images/sunny.png" height="80px"/></div>
+    <div class="logo_middle"><img src="<%=request.getContextPath()%>/resources/images/sunny.png" height="80px"/></div>
     <div class="logo_right">
         <form action="" method="get">
             <div class="search_text">
@@ -65,28 +68,37 @@
         <div class="col-md-3">
             <aside>
                 <div class="avatar">
-                    <img src="resources/images/defaultHeadPortrait.png"/>
+                    <img src="<%=request.getContextPath()%>/resources/images/defaultHeadPortrait.png"/>
                 </div>
                 <h5 class="text-center">替换成用户名</h5>
                 <ul class="list-group">
-                    <li class="list-group-item"><a href="#"><img src="resources/images/Looked.png"/></a></li>
-                    <li class="list-group-item"><a href="#"><img src="resources/images/note.png"/></a></li>
-                    <li class="list-group-item"><a href="#"><img src="resources/images/comment.png"/></a></li>
-                    <li class="list-group-item"><a href="#"><img src="resources/images/interest.png"/></a></li>
+                    <li class="list-group-item">
+                        <button onclick=""><img src="resources/images/Looked.png"/></button>
+                    </li>
+                    <li class="list-group-item">
+                        <button onclick=""><img src="resources/images/note.png"/></button>
+                    </li>
+                    <li class="list-group-item">
+                        <button onclick=""><img src="resources/images/comment.png"/></button>
+                    </li>
+                    <li class="list-group-item">
+                        <button onclick=""><img src="resources/images/interest.png"/></button>
+                    </li>
                 </ul>
             </aside>
         </div>
-        <div class="col-md-9">.col-md-9</div>
+        <div class="col-md-9">
+        </div>
     </div>
 
-    <div class="guessYouLike">
+    <div s="guessYouLike">
         <div class="guess_title">
-            <img src="resources/images/guessyoulike.png" height="45px"/>
+            <img src="<%=request.getContextPath()%>/resources/images/guessyoulike.png" height="45px"/>
         </div>
         <div class="guess_content clearfix">
             <div class="add_convenient">
-                <video id="my-video" class="video-js" controls preload="auto" width="350" height="208"
-                       poster="resources/images/2a.jpg" data-setup="{}">
+                <video id="myvideo" class="video-js" controls preload="auto" width="350" height="208"
+                       poster="<%=request.getContextPath()%>/resources/images/2a.jpg" data-setup="{}">
                     <source src="http://www.w3school.com.cn/i/movie.ogg" type="video/ogg"/>
                     <source src="MY_VIDEO.webm" type="video/webm"/>
                     <p class="vjs-no-js">
@@ -96,9 +108,9 @@
                 </video>
             </div>
             <div class="add_convenient">
-                <video id="my-video" class="video-js" controls preload="auto" width="350" height="208"
-                       poster="resources/images/2a.jpg" data-setup="{}">
-                    <source src="resources/video/李易峰-请跟我联络.mp4" type='video/ogg'>
+                <video id="myvideo" class="video-js" controls preload="auto" width="350" height="208"
+                       poster="<%=request.getContextPath()%>/resources/images/2a.jpg" data-setup="{}">
+                    <source src="<%=request.getContextPath()%>/resources/video/李易峰-请跟我联络.mp4" type='video/ogg'>
                     <source src="MY_VIDEO.webm" type='video/webm'>
                     <p class="vjs-no-js">
                         To view this video please enable JavaScript, and consider upgrading to a web browser that
@@ -107,9 +119,9 @@
                 </video>
             </div>
             <div class="add_convenient">
-                <video id="my-video" class="video-js" controls preload="auto" width="350" height="208"
-                       poster="resources/images/2a.jpg" data-setup="{}">
-                    <source src="resources/video/李易峰-请跟我联络.mp4" type='video/ogg'>
+                <video id="myvideo" class="video-js" controls preload="auto" width="350" height="208"
+                       poster="<%=request.getContextPath()%>/resources/images/2a.jpg" data-setup="{}">
+                    <source src="<%=request.getContextPath()%>/resources/video/李易峰-请跟我联络.mp4" type='video/ogg'>
                     <source src="MY_VIDEO.webm" type='video/webm'>
                     <p class="vjs-no-js">
                         To view this video please enable JavaScript, and consider upgrading to a web browser that
@@ -118,6 +130,7 @@
                 </video>
             </div>
         </div>
+    </div>
 </div>
 </body>
 </html>

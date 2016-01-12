@@ -23,7 +23,7 @@
 </head>
 <body>
 <div class="container page-container">
-    <img src="resources/images/login.png"/>
+    <img src="<%=request.getContextPath()%>/resources/images/login.png"/>
     <div class="panel panel-default panel-signin">
         <div class="panel-heading">用户登录</div>
         <div class="panel-body">
