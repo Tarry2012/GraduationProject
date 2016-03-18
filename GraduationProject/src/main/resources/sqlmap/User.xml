@@ -13,6 +13,9 @@
         <result column="user_home_page" property="userHomePage"/>
         <result column="user_interest_type" property="userInterestType"/>
     </resultMap>
+
+    <parameterMap id="Page" type="common.Page"></parameterMap>
+    
     <select id="selectUserByName" parameterType="String" resultMap="UserMap">
         select * from User where user_name = #{userName}
     </select>
